@@ -17,7 +17,6 @@ bt.addEventListener('click', function() {
     }
 });
 
-//funcao sera disparada mesmo sem nada para limpar! n existe validacao (AINDA)
 limpar.addEventListener('click', function() {
     res.innerHTML = `Campo Limpo!`
 })
