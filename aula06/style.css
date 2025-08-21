@@ -4,5 +4,39 @@
 }
 
 body {
-    background-color: black;
+    background-image: linear-gradient(to left, #1E6091, #184E77);
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 34pt;
+}
+
+div#main {
+    background-color: #34A0A4;
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.405);
+}
+
+div#main > div#calc {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+div#main > div#res {
+    text-align: center;
+    font-size: 18pt;
+}
+
+#clear, #bt {
+    padding: 5px;
+    margin: 3px;
+    border-radius: 5px;
+    background-color: #D9ED92;
+    border: none;
 }
