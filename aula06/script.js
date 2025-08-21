@@ -19,4 +19,5 @@ bt.addEventListener('click', function() {
 
 limpar.addEventListener('click', function() {
     res.innerHTML = ""
+    window.alert("Campo Limpo!")
 })
