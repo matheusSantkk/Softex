@@ -8,7 +8,7 @@ bt.addEventListener('click', function() {
     res.innerHTML = "";
 
     if (isNaN(n)) {
-        res.innerHTML = `digite algo no campo number`;
+        res.innerHTML = `Insira um número`;
         return
     }
 
