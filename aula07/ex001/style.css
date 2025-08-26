@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, #621708, #941B0C);
+    color: #fff;
+
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+div#main {
+    background-color: #220901;
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+div#main > h2 {
+    text-align: center;
+    font-size: 26pt;
+    padding: 10px;
+}
+
+#item-nota {
+    list-style: none;
+    padding: 1px;
+}
+
+#lista-notas {
+    text-align: center;
+    padding: 5px;
+
+}
+
+div#main > button {
+    display: block;
+    margin: 10px auto;
+
+}
+
+p {
+    text-align: center;
+}
