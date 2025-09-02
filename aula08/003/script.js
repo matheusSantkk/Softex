@@ -10,13 +10,23 @@ document.addEventListener("DOMContentLoaded", function() {
     const btsub = document.querySelector("button#sub");
     const btmulti = document.querySelector("button#multi");
     const btdiv = document.querySelector("button#div");
+    const res = document.querySelector("p#res")
 
-    let n1 = parseFloat(txtn1.value);
-    let n2 = parseFloat(txtn2.value);
+    function calcular(operacao) {
+        let n1 = parseFloat(txtn1.value);
+        let n2 = parseFloat(txtn2.value);
 
-    btsoma.addEventListener('click', function() {
-        
-    })
-    
-    
+        if (isNaN(n1) || isNaN(n2)) {
+            res.textContent = "ERRO. Insira números nos campos acima.";
+            return;     
+        }
+
+        const resultado = operacao(n1,n2)
+        res.innerHTML = `${resultado}`
+    }
+
+    btsoma.addEventListener("click", () => calcular(somar))
+    btsub.addEventListener("click", () => calcular(subtrair))
+    btmulti.addEventListener("click", () => calcular(multiplicar))
+    btdiv.addEventListener("click", () => calcular(dividir))
 })
