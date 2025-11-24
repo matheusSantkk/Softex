@@ -2,7 +2,7 @@ let numbers = []
 let par = []
 let impar = []
 
-while (numbers.length < 10) {
+while (numbers.length < 4) {
     let random = Math.floor(Math.random() * 100) + 1;
     if (!numbers.includes(random)) {
         numbers.push(random)
